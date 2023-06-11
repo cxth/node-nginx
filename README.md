@@ -1,10 +1,13 @@
-# Node Nginx With Docker
+# MERN instaverse training with Node Nginx With Docker
 
 Simple Setup Nginx HTTP (Only) As Reverse proxy and simple Express Nodejs.
 
 **Used Ports**
  - 80 (As Ingress)
  - 3000 (As Application (Optional))
+
+## checkout DEV branch
+`git checkout dev`
 
 ## Building Docker container
 `docker build -f Dockerfile -t server .`
@@ -14,6 +17,9 @@ Simple Setup Nginx HTTP (Only) As Reverse proxy and simple Express Nodejs.
 
 ## Run server
 `docker run -it -p 4002:3000 server`
+
+## Run client
+`npm start`
 
 ## Deploying / Running
 1. Change `env` file to `.env` and edit them.
